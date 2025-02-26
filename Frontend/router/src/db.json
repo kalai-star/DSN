@@ -1,0 +1,15 @@
+{
+    "users":[{
+        "id":1,
+        "name":"sakthi",
+        "email":"sakthi@gmail.com",
+        "password":1234
+    }],
+    "products":[{
+        "name":"Iphone",
+        "price":70000,
+        "desc":"Good Mobile",
+        "img":""
+    }]
+
+}

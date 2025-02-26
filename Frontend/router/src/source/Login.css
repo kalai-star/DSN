@@ -1,0 +1,90 @@
+.second {
+  background-image: url('https://www.cobiansrestaurantcypress.com/wp-content/uploads/2021/12/fondo-burger-1920x1280.png');
+    background-repeat: no-repeat;
+    background-size: cover; /* Soft light background for brightness */
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.van {
+  color: #1e90ff; /* Bright blue color for the title */
+  font-size: 3em;
+   
+   margin-bottom: 30px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.form1 {
+  background-color: #ffffff; /* Pure white background for the form */
+  padding: 40px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  text-align: center;
+}
+
+img {
+  max-width: 390px;
+  margin-bottom: 25px;
+ /* Circular image for a friendly touch */
+}
+
+.log1 {
+  color: #333;
+  font-size: 1.2em;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.siva {
+  width: 100%;
+  padding: 15px;
+  margin: 12px 0;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 1.1em;
+  transition: all 0.3s ease;
+}
+
+.siva:focus {
+  border-color: #1e90ff; /* Bright blue border on focus */
+  outline: none;
+}
+
+.btn2 {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.3em;
+  color: white;
+  background-color: #1e90ff; /* Bright blue background */
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn2:hover {
+  background-color: #4682b4; /* Darker blue on hover */
+  transform: translateY(-3px); /* Slight raise effect on hover */
+}
+
+button:disabled {
+  background-color: #b0c4de; /* Disabled button in a soft light blue */
+  cursor: not-allowed;
+}
+
+.message {
+  font-size: 1.2em;
+  color: green;
+  margin-top: 20px;
+  font-weight: bold;
+}

@@ -1,0 +1,161 @@
+/* Fullscreen Form Container with Glassmorphism */
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: url('https://www.cobiansrestaurantcypress.com/wp-content/uploads/2021/12/fondo-burger-1920x1280.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Adding a subtle dark overlay */
+.form::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+  backdrop-filter: blur(5px);
+}
+
+/* Form Heading with Animation */
+.head {
+  color: white;
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 1;
+  animation: slideInDown 1s ease-out;
+  text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.6);
+}
+
+/* Input and Textarea Styles with Glassmorphism */
+.inp1, 
+textarea {
+  width: 300px;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 18px;
+  outline: none;
+  z-index: 1;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  display: block;
+}
+
+/* Input Focus Effect */
+.inp1:focus, 
+textarea:focus {
+  border-color: rgba(255, 255, 255, 0.8);
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Label Styles */
+.lab1 {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 5px;
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 1;
+}
+
+/* Submit Button Styles with Interactive Effects */
+.buttonup {
+  color: white;
+  border: none;
+  height: 50px;
+  width: 150px;
+  background: linear-gradient(135deg, rgba(255, 0, 150, 0.6), rgba(0, 204, 255, 0.6));
+  margin-top: 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 20px;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s ease, transform 0.2s;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* Button Hover Effect with Glow */
+.buttonup:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3), 
+              0 0 15px rgba(255, 0, 150, 0.8);
+}
+
+/* Button Active State */
+.buttonup:active {
+  transform: translateY(2px) scale(0.95);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Button Ripple Effect */
+.buttonup::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.4) 10%, transparent 10%);
+  background-position: center;
+  transform: scale(0);
+  transition: transform 0.5s, opacity 1s;
+  opacity: 0;
+}
+
+.buttonup:active::after {
+  transform: scale(4);
+  opacity: 1;
+  transition: 0s;
+}
+
+/* Form Entrance Animation */
+@keyframes slideInDown {
+  0% {
+      opacity: 0;
+      transform: translateY(-50px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Media Query for Mobile Responsiveness */
+@media (max-width: 768px) {
+  .inp1, 
+  textarea {
+      width: 80%;
+  }
+
+  .head {
+      font-size: 36px;
+  }
+
+  .buttonup {
+      width: 120px;
+      height: 45px;
+      font-size: 18px;
+  }
+}

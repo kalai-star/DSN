@@ -1,0 +1,32 @@
+/* UploadItems.css */
+
+.upload-container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.view-donations-button {
+    padding: 12px 24px;
+    background-color: #4caf50; /* Green color */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.view-donations-button:hover {
+    background-color: #45a049;
+    transform: translateY(-3px);
+}
+
+.view-donations-button:active {
+    background-color: #3e8e41;
+    transform: translateY(2px);
+}

@@ -1,0 +1,91 @@
+.a{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    background-image: url('https://www.cobiansrestaurantcypress.com/wp-content/uploads/2021/12/fondo-burger-1920x1280.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+    color: #333;
+    overflow: hidden; /* Prevent scrolling */
+    height: 100vh; /* Full viewport height */
+}
+
+.a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    height: 100vh; /* Keep full height but static */
+    padding: 5px;
+    background-color: #f1f1f1;
+    border-radius: 12px;
+}
+
+.b {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    
+    max-width: 450px;
+    width: 100%;
+    text-align: center;
+    
+}
+
+
+
+.c {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.d, .f, .h {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 8px;
+    color: #666;
+    text-align: left;
+}
+
+.e, .g, .i {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+
+
+.j {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #6c63ff;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    
+    margin-top: 10px;
+}
+
+
+
+.k {
+    margin-top: 15px;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.message {
+    font-size: 1rem;
+    color: #28a745;
+    margin-top: 15px;
+    animation: fadeIn 1s;
+}
+

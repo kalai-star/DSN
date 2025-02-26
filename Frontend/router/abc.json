@@ -1,0 +1,49 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "Sakthi",
+      "email": "sakthi@gmail.com",
+      "password": "power28"
+    },
+    {
+      "id": "3c13",
+      "username": "Power",
+      "email": "power@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "3533",
+      "username": "",
+      "password": ""
+    },
+    {
+      "id": "4d58",
+      "username": "",
+      "password": ""
+    }
+  ],
+  "donation": [
+    {
+      "donorName": "power",
+      "phoneNumber": 9876543219,
+      "address": "srivi",
+      "items": [
+        {
+          "itemName": "Meal",
+          "quantityUnit": "Persons",
+          "quantity": 10
+        }
+      ],
+      "id": "46bf"
+    }
+  ],
+  "receive": [
+    {
+      "name": "kalai",
+      "phoneNumber": 9876543210,
+      "address": "srivi",
+      "location": "srivi"
+    }
+  ]
+}
