@@ -4,15 +4,13 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
 const Receiver = () => {
-  const navigate = useNavigate(); // Initialize useNavigate properly
+  const navigate = useNavigate(); 
   const [message, setMessage] = useState("");
-
-  // Initialize all required form fields, including 'location'
   const [formData, setFormData] = useState({
     name: "",
     phoneNumber: "",
     address: "",
-    location: "" // Added 'location' field initialization
+    location: "" 
   });
 
   const handleChange = (e) => {
